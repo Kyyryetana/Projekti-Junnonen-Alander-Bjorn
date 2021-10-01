@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poiret+One&display=swap');
+
+body {
+  background-color: #F5F5DC;
+}
+
+header {
+  height: 80px;
+  background: #F5F5DC;
+}
+  header p {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    margin-top: -25px;
+  }
+
+h1 {
+  font-family: 'Fredoka One', normal;
+  font-size: 40px;
+}
+
+nav {
+  height: 30px;
+  background: #F5F5DC;
+  margin-left: 830px;
+  margin-top: -22px;
+}
+  nav li {
+    list-style-type: none;
+    display: inline;
+    font-size: 19px;
+  }
+    a {
+      color: #1E90FF;
+      padding: 6px;
+    }
+
+article {
+  width: 970px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+  article h2 {
+    font-family: 'Fredoka One', normal;
+  }
+
+aside {
+  width: 350px;
+  height: 400px;
+  background:  #C9C0BB;
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+aside article {
+  width: 300px;
+  background: #C9C0BB;
+  text-align: left;
+  padding: 0 0 0 30px;
+  color: #4C516D;
+}
+  aside h2 {
+    text-align: center;
+  }
+
+footer li {
+    list-style-type: none;
+    padding-right: 40px;
+}
+  h3 {
+    text-align: right;
+    padding-right: 140px;
+  }
+
+address {
+  padding-left: 10px;
+}
+
+#logo-ylä {
+  width: 130px;
+  float: left;
+  overflow: hidden;
+  margin: -25px 10px 0 5px;
+  transform: scaleX(-1);
+}
+
+#logo-ala {
+  width: 65px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+#banner {
+  margin-top: -10px;
+  width: 1350px;
+  height: 80px;
+  padding: 0 7px;
+}
+
+#sivu-kissa {
+  width: 100px;
+  padding-left: 110px;
+}
+
+#merieläin1 {
+  width: 140px;
+  height: 120px;
+  padding-left: 200px;
+}
+
+#merieläin2 {
+  width: 140px;
+  height: 120px;
+  padding-right: 400px;
+}
