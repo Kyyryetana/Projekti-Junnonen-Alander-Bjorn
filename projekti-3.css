@@ -1,0 +1,101 @@
+body, html {
+  height: 100%; /* Varmistaa, että kuva pysyvät oikeissa suhteissa sivulla. */
+  margin: 0; /* Varmistaa, ettei sivulle jää tyhjää tilaa ulkoreunoille. */
+  text-align: center; /* Siirtää tekstin sivun keskelle */
+}
+
+section {
+  color: #fff; /* Tekstin väri. */
+  padding: 40px 150px; /* Siirtää  */
+}
+
+.kuva-otsikko {
+  font-size: 35px; /* Määrää fontin koon. */
+  color: #00EFEF; /* Tekstin väri. */
+  padding-top: 140px; /* Luo tilaa tekstin yläpuolelle (elementin rajojen sisäpuolelle), siirtäen tekstiä alaspäin. */
+}
+
+.harrastustxt {
+  letter-spacing: 2px; /* Kuinka paljon tyhjää väliä on yksittäisten kirjainten välissä. */
+  font-size: 20px; /* Tekstin koko. */
+}
+
+.lahde, a {
+  font-family: arial; /* Määrää fontin tyylin. */
+  font-size: 8px; /* Määrää fontin koon. */
+  color: #00EFEF; /* Tekstin väri. */
+  margin-top: 180px; /* Luo tilaa tekstin yläpuolelle (elementin rajojen ulkpouolelle), siirtäen tekstiä alaspäin. */
+}
+
+.lahde1 a {
+  font-family: arial; /* Määrää fontin tyylin. */
+  font-size: 8px; /* Määrää fontin koon. */
+  color: #00EFEF; /* Tekstin väri. */
+  float: left; /* Siirtää tekstin vasemmalle */
+  margin-top: 730px; /* Luo tilaa tekstin yläpuolelle (elementin rajojen ulkpouolelle), siirtäen tekstiä alaspäin. */
+  margin-left: 5px; /* Luo tilaa tekstin vasemmalle puolelle (elementin rajojen ulkpouolelle), siirtäen tekstiä oikealle. */
+}
+
+.ylin-alin {
+  padding: 20px 20px; /* Kuinka kaukana laatikon reunat ovat sen sisällä olevasta tekstistä. */
+  border-style: double; /* Antaa laatikolle kaksois kehysteet. */
+  border-color: #025666; /* Laatikon reunojen värit. */
+  background-color: #3C8D9C; /* Laatikon koko väri. */
+  color: #fff; /* Tekstin väri. */
+  bottom: 50%; /* Laittaa tekstin sivun keskelle. */
+  position: absolute; /* Laittaa sivun ylimmän ja alimman otsikon keskelle sivulla. */
+}
+  .ylin-alin h2 {
+    font-family: 'Zi Mang Xing', cursive; /* Muuttaa tekstin fontin. */
+  }
+
+#parallax1 ,#parallax2, #parallax3, #parallax4, #parallax5 {
+  position: relative; /* Pitää alaotsikon paikoillaan. */
+  background-position: center; /* Pitää kuvat sivun keskellä. */
+  background-repeat: no-repeat; /* Mikään taustakuva ei toistu. */
+  background-attachment: fixed; /* Taustakuvat liikkuvat sivun mukana. */
+  overflow: hidden; /* Piilottaa asiat jotka eivät mahdu siulle. */
+}
+
+#parallax1 {
+  background-image: url("kuva1.jpg"); /* Taustakuva. */
+  min-height: 100%; /* Kertoo kuinka paljon taustakuvaa näkyy. */
+  padding-right: 460px; /* Luo tilaa oikealle puolelle (elementin rajojen sisäpuolelle), siirtäen tekstiä vasemmalle. */
+}
+
+#parallax2 {
+  background-image: url("piirrustus.jpg"); /* Taustakuva. */
+  min-height: 400px; /* Kertoo kuinka paljon taustakuvaa näkyy. */
+  opacity: 0.90; /* Kuvan sameus. */
+}
+
+#parallax3 {
+    background-image: url("eurheilu.jpg"); /* Taustakuva. */
+    min-height: 400px; /* Kertoo kuinka paljon taustakuvaa näkyy. */
+    opacity: 0.90; /* Kuvan sameus */
+}
+
+#parallax4 {
+  background-image: url("musiikki.jpg"); /* Taustakuva. */
+  min-height: 400px; /* Kertoo kuinka paljon taustakuvaa näkyy. */
+  opacity: 0.90; /* Kuvan sameus */
+}
+
+#parallax5 {
+    background-image: url("kuva2.jpg"); /* Taustakuva. */
+    min-height: 100%; /* Kertoo kuinka paljon taustakuvaa näkyy. */
+    font-family: 'Zi Mang Xing', cursive; /* Muuttaa tekstin fontin. */
+    padding-right: 300px; /* Luo tilaa oikealle puolelle (elementin rajojen sisäpuolelle), siirtäen tekstiä vasemmalle. */
+}
+
+#section1 {
+  background-color: #025666; /* Muuttaa 'section' kohdan tausta värin. */
+}
+
+#section2 {
+  background-color: #217F90; /* Muuttaa 'section' kohdan tausta värin. */
+}
+
+#section3 {
+  background-color: #3C8D9C; /* Muuttaa 'section' kohdan tausta värin. */
+}
