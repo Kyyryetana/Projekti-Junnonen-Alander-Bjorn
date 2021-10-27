@@ -1,26 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="projekti4.css">
-    <title></title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matelijamessut ilmottautuminen</title>
+  <link rel="stylesheet" href="projekti4.css" type="text/css">
+</head>
   <body>
-<!-- COMBAK: tänne rakannetaan ilmoittautumis sivu -->
-
-<!-- COMBAK:
-  Sukunimi
-  Etunimet
-  Osoitetitedot - SEIS, muistatko, mitä puhuttiin tunnilla - mahdollisimman pieniksi osiksi
-  Puhelin
-  Sähköposti
-  Työnantaja tai jos opiskelija oppilaitos
-  Ammattinimike tai jos opiskelija: opiskelija
-  Syntymäaika - SEIS, mieti kentän tyyppi, tällä kertaa EI OLE varchar
-  Tapahtuman hintavaihtoehdot
-  Erikoisruokavalio
-  Lisätietoja
-  -->
-
+    <!-- header osio -->
+      <header id="yla">
+        <div class="logo">
+          <img id="kilpikonna" src="kilppari.svg" alt="kilpikonna logo">
+        </div>
+        <div class="otsikko">
+          <h1>MATELIJAMESSUT</h1>
+        </div>
+      </header>
+    <h2>Tervetuloa!</h2>
+    <h3>Olet ilmottautumassa tapahtumaan, Matelija Messut!</h3>
+<form class="lomake">
+  <label for="Sukunimi">Sukunimi: </label>
+    <input type="text" name="sukunimi" value=""><br>
+  <label for="etunimet">Etunimet: </label>
+    <input type="text" name="etunimet" value=""><br>
+  <label for="kaupunki">Postitoimipaikka: </label>
+    <input type="text" name=kaupunki"" value="" placeholder="Helsinki"><br>
+  <label for="postinumero">Postinumero: </label>
+    <input type="text" name="postinumero" value="" placeholder="00520"><br>
+  <label for="osoite">Postiosoitteesi: </label>
+    <input type="text" name="osoite" value="" placeholder="Messuaukio 1"><br>
+  <label for="puhelin">Puhelinnumero: </label>
+    <input type="text" name="puhelin" value=""><br>
+  <label for="sposti">Sähköposti: </label>
+    <input type="email" name="sposti" value="" placeholder="example@gmail.com"><br>
+  <label for="työnantaja">Työnantaja tai jos opiskelija oppilaitos: </label>
+    <input type="text" name="työnantaja" value="" ><br>
+  <label for="ammattinimike">Ammattinimike tai jos opiskelija: "opiskelija": </label>
+    <input type="text" name="ammattinimike" value=""><br>
+  <label for="syntymäaika">Syntymäaika: </label>
+    <input type="date" name="syntymäaika" value=""><br>
+  <label for="hinnat">Tapahtuman hintavaihtoehdot: </label>
+    <input type="checkbox" name="sisäänpääsy" value="">
+  <label for="sisäänpääsy">Sisäänpääsy | 10€</label>
+    <input type="checkbox" name="sisäänpääsy2" value="">
+  <label for="sisäänpääsy2">Opiskelija tai Eläkeläinen | 5€</label>
+    <input type="checkbox" name="herppi" value="">
+  <label for="herppi">Herppien myyjä | 150€/pöytä</label>
+    <input type="checkbox" name="lisäpöytä" value="">
+  <label for="lisäpöytä">Lisäpöytä | 50€</label><br>
+  <label for="ruokavalio">Erikoisruokavalio: </label>
+    <input type="text" name="ruokavalio" value=""><br>
+  <label for="lisätietoja">Lisätietoja: </label><br>
+  <textarea name="lisätietoja" rows="8" cols="80" placeholder="Kerro mahdollisia lisätietoja, jos mitään ei ole jätä tyhjäksi!"></textarea><br>
+  <button type="submit" name="lähetä" onclick="alert('Kiitos osallistumisestasi!')">Lähetä</button>
+  <button type="reset" name="tyhjennä">Tyhjennä</button>
+</form>
+<footer>
+  <table>
+<!-- tämä vasempaan alareunaan -->
+    <td id="vasen">
+      <address class="osoite">
+        <p>Keuda Kerava, liikuntasali</p>
+        <p>Sarviniitynkatu 9</p>
+        <p>04200 Kerava</p>
+      </address>
+    </td>
+<!-- tämä oikeaan alareunaan -->
+    <td id="oikea">
+      <p>Messujen järjestäjinä toimivat</p>
+      <p>Keuda Kerava keskikadun opiskelijat</p>
+      <p>Niko Alander</p>
+      <p>Mika Björn</p>
+      <p>Jasmin Junnonen</p>
+    </td>
+  </table>
+</footer>
   </body>
 </html>
