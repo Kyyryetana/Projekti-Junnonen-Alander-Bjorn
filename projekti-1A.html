@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="projekti-1A.css">
     <meta charset="utf-8">
     <title>Lomake harjoitus</title>
   </head>
 
   <body>
-    <header id="ylaOtsikko">
+    <div class="kokoLomake">
+      <header id="ylaOtsikko">
       <h2>Kirjautumislomake</h2>
       <h3>Matelijoiden, sammakkoeläimien ja selkärangattomien ystäville!</h3>
-    </header>
+      </header>
 
     <div class="lomakkeet">
       <form>
@@ -35,10 +37,7 @@
         <input id="onkoMatelijaa_muu" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa_muu">Jokin muu:</label><br>
       <label for="lisatietoja">Mikä?</label><br>
-        <textarea name="lisatietoja" rows="8" cols="60" placeholder="Kerro tässä muista mahdollisista omistamistasi lemmikeistäsi"></textarea><br>
-      <div class="buttons">
-        <button type="reset" name="tyhjenna">Tyhjennä</button>
-      </div>
+        <textarea id="tekstiKentta" name="lisatietoja" rows="8" cols="60" placeholder="Kerro tässä muista mahdollisista omistamistasi lemmikeistäsi"></textarea><br>
       <br><br>
     </div>
 
@@ -77,7 +76,11 @@
     <div class="buttons">
       <button type="submit" name="läheta">Lähetä</button>
     </div>
+    <div class="buttons">
+      <button type="reset" name="tyhjenna">Tyhjennä</button>
+    </div>
 
   </form>
-  </body>
+  </div>
+</body>
 </html>
