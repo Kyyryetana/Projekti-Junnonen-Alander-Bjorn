@@ -1,10 +1,8 @@
 body {
   background-image: url("kaarme2.jpeg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: forestgreen;
 }
 
 #ylaOtsikko{
@@ -14,7 +12,7 @@ body {
 }
 
 .kokoLomake {
-  border: solid black 4px;
+  border: solid black 5px;
   width: 400px;
   background-color: rgba(50, 200, 50, 0.7);
   padding: 10px;
@@ -26,9 +24,8 @@ body {
 }
 
 .lomakkeet {
-  background-color: ;
   padding-left: 20px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
 .buttons {

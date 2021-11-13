@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="projekti-1A.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="projekti-1A.css">
     <meta charset="utf-8">
@@ -8,42 +9,59 @@
   </head>
 
   <body>
+
+<!-- otsikko -->
+
     <div class="kokoLomake">
       <header id="ylaOtsikko">
       <h2>Kirjautumislomake</h2>
       <h3>Matelijoiden, sammakkoeläimien ja selkärangattomien ystäville!</h3>
       </header>
 
+<!-- käyttäjätunnus ja salasana -->
+
     <div class="lomakkeet">
       <form>
-        <label for="kayttajatunnus">Käyttäjätunnus</label><br>
-          <input type="text" name="kayttajatunnus" value=""     size="25"><br><br>
-        <label for="salasana">Salasana</label><br>
-          <input type="text" name="sukunimi" value="" size="25"><br><br>
+        <label for="kayttajatunnus"> <b>Käyttäjätunnus:</b></label><br>
+          <input type="text" name="kayttajatunnus" value="" size="25"><br><br>
+
+        <label for="salasana"> <b>Salasana:</b> </label><br>
+          <input type="password" name="salasana" value="" size="25"><br><br><br>
     </div>
 
+<!-- checkboxit ja lopussa tekstikenttä -->
+
     <div class="lomakkeet">
-      <label for="onkoMatelijaa"><b>Onko sinulla matelijaa ja jos on niin millainen?</b></label><br>
+      <label for="onkoMatelijaa"><b>Onko sinulla matelijaa ja jos on niin millainen?</b></label><br><br>
+
         <input id="onkoMatelijaa_ei" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa_ei">Minulla ei ole omaa matelijaa</label><br>
+
         <input id="onkoMatelijaa_kaarme" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa_kaarme">Käärme</label><br>
+
         <input id="onkoMatelijaa_lisko" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa_lisko">Lisko</label><br>
+
         <input id="onkoMatelijaa_sammakko" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa">Sammakko</label><br>
+
         <input id="onkoMatelijaa_kilpikonna" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa_kilpikonna">Kilpikonna</label><br>
+
         <input id="onkoMatelijaa_muu" type="checkbox" name="onkoMatelijaa_vastaus" value="">
       <label for="onkoMatelijaa_muu">Jokin muu:</label><br>
+
       <label for="lisatietoja">Mikä?</label><br>
         <textarea id="tekstiKentta" name="lisatietoja" rows="8" cols="60" placeholder="Kerro tässä muista mahdollisista omistamistasi lemmikeistäsi"></textarea><br>
-      <br><br>
+      <br>
     </div>
 
+<!-- pudotusvalikko -->
+
     <div class="lomakkeet">
-      <label for="kukaOlet">Oletko keräilijä, pelkkä lemmikinomistaja vai jotain muuta?</label><br>
-      <select id="kukaOlet" name="">
+      <label for="kukaOlet"><b>Oletko keräilijä, pelkkä lemmikinomistaja vai jotain muuta?</b></label><br>
+      <select id="kukaOlet" name="pudotusvalikko">
         <option value="tyhja"></option>
         <option value="kerailija">Keräilijä</option>
         <option value="lemmikinOmistaja">Pelkkä lemmikinomistaja</option>
@@ -53,31 +71,44 @@
       </select><br><br>
     </div>
 
+<!-- radionapit -->
+
     <div class="lomakkeet">
       <label for="montakoMatelijaa"><b>Montako matelijaa sinulla on?</b></label><br>
+
         <input id="montakoMatelijaa_0" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa_0">En tällä hetkellä omista yhtään</label><br>
+
         <input id="montakoMatelijaa_1" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">1</label><br>
+
         <input id="montakoMatelijaa_2" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">2</label><br>
+
         <input id="montakoMatelijaa_3" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">3</label><br>
+
         <input id="montakoMatelijaa_4" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">4</label><br>
+
         <input id="montakoMatelijaa_5" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">5</label><br>
+
         <input id="montakoMatelijaa_5+" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">5+</label><br>
+
         <input id="montakoMatelijaa_10+" type="radio" name="montakoMatelijaa_vastaus" value="">
       <label for="montakoMatelijaa">10+</label><br><br>
     </div>
 
+<!-- lähetys ja tyhjennys napit -->
+
     <div class="buttons">
-      <button type="submit" name="läheta">Lähetä</button>
+      <button type="button" name="laheta" onclick="tarkista()">Lähetä</button>
     </div>
+
     <div class="buttons">
-      <button type="reset" name="tyhjenna">Tyhjennä</button>
+      <button type="button" name="tyhjenna" onclick="tyhjenna()">Tyhjennä</button>
     </div>
 
   </form>
