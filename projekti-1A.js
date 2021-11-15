@@ -8,6 +8,7 @@ function tarkista(formi) {
   if (salasana.length < 1) {
     alert("Salasana on liian lyhyt!");
   }
+  /*
   var checkBoksit = formi.onkoMatelijaa_vastaus;
   if (
     formi.onkoMatelijaa_vastaus1.checked == false &&
@@ -22,12 +23,35 @@ function tarkista(formi) {
   } else {
           return true;
   }
-  var tekstiKentta = formi.lisatietoja.value;
-  //tänne tekeminen
-  var pudotusvalikko = formi.pudotusvalikko.value;
-  //tänne tekeminen
+*/
+
+//checkboxit
+  var checkBox = formi.onkoMatelijaa_vastaus;
+  var checkTest = false;
+  for(var i = 0; i < checkBox.length; i++) {
+    if(checkBox[i].checked == true) {
+      checkTest = true;
+      }
+    } if(checkTest == false) {
+      alert("Valitse matelija tai jokin muu!");
+    }
+
+
+  // var tekstiKentta = formi.lisatietoja.value;
+  // //tänne tekeminen
+  // var pudotusvalikko = formi.pudotusvalikko.value;
+  // //tänne tekeminen
+
+//radionapit
   var radionapit = formi.montakoMatelijaa_vastaus;
-  //tänne tekemine
+  var radioTest = false;
+  for(var j = 0; j < radionapit.length; j++) {
+    if(radionapit[j].checked == true) {
+      radioTest = true;
+      }
+  } if(radioTest == false) {
+    alert("Valitse matelijoiden määrä!");
+  }
 
 
 
