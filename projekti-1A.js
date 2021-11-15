@@ -9,13 +9,25 @@ function tarkista(formi) {
     alert("Salasana on liian lyhyt!");
   }
   var checkBoksit = formi.onkoMatelijaa_vastaus;
-  //tänne tekeminen
+  if (
+    formi.onkoMatelijaa_vastaus1.checked == false &&
+    formi.onkoMatelijaa_vastaus2.checked == false &&
+    formi.onkoMatelijaa_vastaus3.checked == false &&
+    formi.onkoMatelijaa_vastaus4.checked == false &&
+    formi.onkoMatelijaa_vastaus5.checked == false &&
+    formi.onkoMatelijaa_vastaus6.checked == false)
+    {
+      alert("Valitse joku valintaruutu!")
+      return false;
+  } else {
+          return true;
+  }
   var tekstiKentta = formi.lisatietoja.value;
   //tänne tekeminen
   var pudotusvalikko = formi.pudotusvalikko.value;
   //tänne tekeminen
   var radionapit = formi.montakoMatelijaa_vastaus;
-  //tänne tekeminen
+  //tänne tekemine
 
 
 
