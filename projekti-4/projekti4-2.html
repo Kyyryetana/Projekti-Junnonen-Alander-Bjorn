@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matelijamessut ilmottautuminen</title>
+  <link rel="stylesheet" href="projekti-4.css" type="text/css">
+</head>
+  <body>
+    <!-- header osio -->
+    <header class="yla">
+      <h1>MATELIJAMESSUT</h1>
+        <img src="kilppari.svg" alt="kilpikonna logo" class="logo-kilpikonna">
+        <nav>
+          <ul>
+            <li><a href="projekti-4.html">Kotisivu</a></li>
+            <li><a href="#">Lisätietoja</a></li>
+            <li><a href="#">Ota Yhteyttä</a></li>
+          </ul>
+        </nav>
+    </header>
+  <div id="lomake">
+   <h2>Tervetuloa!</h2>
+    <h3>Olet ilmottautumassa tapahtumaan, Matelijamessut 9.11 - 21.11.2021</h3>
+ <form>
+  <label for="etunimi">Etunimi: </label><br>
+    <input type="text" name="etunimet" value="" size="40"><br>
+  <label for="Sukunimi">Sukunimi: </label><br>
+    <input type="text" name="sukunimi" value="" size="40"><br>
+  <label for="kaupunki">Postitoimipaikka: </label><br>
+    <input type="text" name=kaupunki"" value="" placeholder="Kerava" size="40"><br>
+  <label for="postinumero">Postinumero: </label><br>
+    <input type="text" name="postinumero" value="" placeholder="04200" size="40"><br>
+  <label for="osoite">Postiosoitteesi: </label><br>
+    <input type="text" name="osoite" value="" placeholder="Sarviniitynkatu 9" size="40"><br>
+  <label for="puhelin">Puhelinnumero: </label><br>
+    <input type="text" name="puhelin" value="" size="40"><br>
+  <label for="sposti">Sähköposti: </label><br>
+    <input type="email" name="sposti" value="" placeholder="example@gmail.com" size="40"><br>
+  <label for="työnantaja">Työnantaja tai opiskelija oppilaitos: </label><br>
+    <input type="text" name="työnantaja" value="" size="40"><br>
+  <label for="ammattinimike">Ammattinimike tai opiskelija: </label><br>
+    <input type="text" name="ammattinimike" value="" size="40"><br>
+   <label for="ruokavalio">Erikoisruokavalio: </label><br>
+     <input type="text" name="ruokavalio" value="" size="40"><br>
+  <label for="syntymäaika">Syntymäaika: </label><br>
+    <input type="date" name="syntymäaika" value=""><br>
+  <div id="checkbox">
+  <label for="hinnat">Hintavaihtoehdot: </label>
+  </div>
+    <input type="checkbox" name="sisäänpääsy" value="">
+  <label for="sisäänpääsy">Sisäänpääsy | 10€</label><br>
+    <input type="checkbox" name="sisäänpääsy2" value="">
+  <label for="sisäänpääsy2">Opiskelija tai Eläkeläinen | 5€</label><br>
+    <input  type="checkbox" name="herppi" value="">
+  <label for="herppi">Herppien myyjä | 150€/pöytä</label><br>
+    <input type="checkbox" name="lisäpöytä" value="">
+  <label for="lisäpöytä">Lisäpöytä | 50€</label><br>
+  <input type="checkbox" name="normaali ruokailu" value="">
+  <label for="normaali ruokailu">Normaali ruokailu | 5€</label><br>
+  <input type="checkbox" name="erikoisruokavalio" value="">
+  <label for="erikoisruokavalio">Erikoisruokavalio | 10€</label><br>
+  <br>
+  <label for="lisätietoja">Lisätietoja: </label><br>
+  <textarea name="lisätietoja" rows="8" cols="70" placeholder="Kerro mahdollisia lisätietoja, jos mitään ei ole jätä tyhjäksi!"></textarea><br>
+<br>
+  <button type="submit" name="lähetä" onclick="alert('Kiitos osallistumisestasi!')">Lähetä</button>
+  <button type="reset" name="tyhjennä">Tyhjennä</button>
+</form>
+  </div>
+<footer>
+  <table>
+    <tr>
+  <!-- tämä vasempaan alareunaan -->
+      <th>
+        <address>
+          <p>Keuda Kerava, liikuntasali</p>
+          <p>Sarviniitynkatu 9</p>
+          <p>04200 Kerava</p>
+        </address>
+      </th>
+  <!-- tämä oikeaan alareunaan -->
+      <th>
+        <p>Messujen järjestäjinä toimivat <br> Keuda Kerava keskikadun opiskelijat</p>
+        <p class="nimi">Niko Alander</p>
+        <p class="nimi">Mika Björn</p>
+        <p class="nimi">Jasmin Junnonen</p>
+      </th>
+     </tr>
+   </table>
+ </footer>
+</body>
+</html>
