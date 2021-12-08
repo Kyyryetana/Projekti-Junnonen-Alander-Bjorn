@@ -26,7 +26,19 @@ body {
   justify-content: center;
 }
 
-.card {
+.card  {
+
+}
+
+.card-back * {
+  /* COMBAK: opacityllä näkyy että piilossa ovat */
+  opacity: 0.9;
+  position: absolute;
+  height: 175px;
+  width: 125px;
+}
+
+.card-front * {
   height: 175px;
   width: 125px;
 }
