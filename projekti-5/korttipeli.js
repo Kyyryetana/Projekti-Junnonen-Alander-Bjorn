@@ -4,9 +4,12 @@ function flipKortti(){
   this.classList.toggle('flip');
 }
 
+(function shuffle(){
+  kortit.forEach(kortti => {
+    let random = Math.floor(Math.random() * 16);
+    kortti.style.order = random;
+  });
+})();
+
 kortit.forEach(kortti => kortti.addEventListener('click', flipKortti));
-// ei toimi vielä sekoitus (document is not defined)
-function sekoita(kortit) {
-    kortit.sort(function(a, b){return 0.5 - Math.random()});
-    return kortit;
-}
+
