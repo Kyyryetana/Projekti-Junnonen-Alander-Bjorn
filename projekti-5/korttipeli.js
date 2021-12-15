@@ -1,8 +1,11 @@
 const kortit = document.querySelectorAll('.kortti');
 let hasFlippedCard = false;
+let lockBoard = false;
 let firstCard, secondCard;
 
 function flipKortti(){
+  if (lockBoard) return;
+
   this.classList.toggle('flip');
 
   if (!hasFlippedCard) {
@@ -20,10 +23,12 @@ function flipKortti(){
       firstCard.removeEventListener('click', flipKortti);
       secondCard.removeEventListener('click', flipKortti);
     } else {
+      lockBoard = true;
       //ei pari :(
       setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+        lockBoard = false;
       }, 1500);
     }
   }
