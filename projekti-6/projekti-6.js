@@ -30,19 +30,13 @@ localStorage.removeItem(avain);
 alert("Avaimen tiedot poistettu!")
 }
 
-
-
-
-
-
-
-
-
-
-
-
+function poistaKaikki() {
+  localStorage.clear()
+  alert("Kaikki tiedot poistettu!");
+}
 
 window.onload =function() { //laittaa napit toimimaan HTML:n ID:llä
   document.getElementById('haeArkistosta').onclick = haeTiedot
   document.getElementById('poistaNappi').onclick = poistaYksi
+  document.getElementById('poistaKaikkiNappi').onclick = poistaKaikki
 }
