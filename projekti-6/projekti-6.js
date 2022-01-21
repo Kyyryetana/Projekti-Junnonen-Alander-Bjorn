@@ -27,6 +27,7 @@ function poistaYksi() {
 //poistaa avaimen paikallisesta arkistosta
 var avain = document.getElementById('poistaAvain').value; //käyttäjän antama avain
 localStorage.removeItem(avain);
+alert("Avaimen tiedot poistettu!")
 }
 
 
