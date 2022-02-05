@@ -17,7 +17,6 @@ const changeColor = color => ctx.strokeStyle = color;
 //Piirtäminen
 let prevX = null
 let prevY = null
-ctx.lineWidth = 5
 let piirto = false
 // Piirrä kun hiiren klikkiä painetaan
 window.addEventListener("mousedown", (e) => piirto = true)
