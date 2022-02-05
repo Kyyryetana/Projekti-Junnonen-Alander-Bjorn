@@ -10,3 +10,6 @@ function poista(){
 ctx.lineWidth = 3;
 const changeWidth = value => ctx.lineWidth = value;
 ctx.lineCap = "round";
+
+//Värin vaihto
+const changeColor = color => ctx.strokeStyle = color;
