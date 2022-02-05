@@ -5,7 +5,7 @@ body {
 
 canvas {
   border-style: double;
-  margin: 10px 65px 5px 65px;
+  margin: 10px 0px 65px;
 }
 
 #kynänPaksuus {
