@@ -1,5 +1,17 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+const save = document.getElementById('tallenna');
+
+//kuvan tallennus tietokoneelle
+save.addEventListener("click", function () {
+  const a = document.createElement("a");
+  //document.body.appenChild(a);
+  a.href = canvas.toDataURL();
+  a.download = "canvas-image.png";
+  a.click();
+  //document.body.removeChild(a);
+  //voi vaatia firefoxissa nämä auki
+});
 
 //Poistaa kaiken
 function poista(){
